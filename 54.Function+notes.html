@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title></title>
+    <style type='text/css'>
+        #main{
+                height:3800;
+                widht:95%;
+                background-color:peachpuff;
+                margin:20px;
+                border-radius:20px;
+                padding:20px;
+                 }
+        #first{
+                height:900;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        .w1{
+            height:150px;
+            width:30%;
+            background-color:aliceblue;
+            padding:20px;
+            border-radius:20px;
+        }
+        .w2{
+            height:300px;
+            width:30%;
+            background-color:aliceblue;
+            padding:20px;
+            border-radius:20px;
+        }
+         #second{
+                height:1200;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+         #third{
+                height:700;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+         #fourth{
+                height:630;
+                widht:80%;
+                background-color:skyblue;
+                margin:20px;
+                border-radius:20px;
+                padding:30px;
+                 }
+        .w3{
+            height:500px;
+            width:30%;
+            background-color:aliceblue;
+            padding:20px;
+            border-radius:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id='main'>
+    <div id='first'>
+        <h2>Functions </h2>
+        <p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+        <p>As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.</p>
+        <h4>Defining a Function</h4>
+        <hr>
+        <p>You can define functions to provide the required functionality. Here are simple rules to define a function in Python.</p>
+        <ul>
+            <li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</li>
+            <li>Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li>
+            <li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li>
+            <li>The code block within every function starts with a colon (:) and is indented.</li>
+            <li>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.</li>
+        </ul>
+        <hr>
+        <p>Syntax:</p>
+        <div class='w1'>
+            <p> def functionname( parameters ):</p>
+            <p>"function_docstring"</p>
+            <p>function_suite</p>
+            <p>return [expression]</p>
+        </div>
+        <p>By default, parameters have a positional behavior and you need to inform them in the same order that they were defined.</p>
+        <p>example:</p>
+        <p>The following function takes a string as input parameter and prints it on the standard screen.</p>
+        <div class='w1'>
+            <p> def printme( str ):</p>
+            <p>"This prints a passed string into this function"</p>
+            <p> print (str)</p>
+            <p>return </p>
+        </div>
+    </div>
+    <div id='second'>
+        <h2>Calling a Function</h2>
+        <p>Defining a function gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.</p>
+        <p>Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt. Following is an example to call the printme() function-</p>
+        <div class='w2'>
+            <p>def printme( str ):</p>
+            <p>"This prints a passed string into this function"</p>
+            <p> print (str)</p>
+            <p>return </p>
+            <p>printme("This is first call to the user defined function!")</p>
+            <p>printme("Again second call to the same function")</p>
+            <hr>
+            <p>This is first call to the user defined function!</p>
+            <p>Again second call to the same function</p>
+        </div>
+       
+        <h2>Pass by Reference vs Value</h2>
+        <hr>
+        <p></p>
+        <p>All parameters (arguments) in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example- </p>
+        <p></p>
+        <div class='w3'>
+            <p> def changeme( mylist ):</p>
+            <p>"This changes a passed list into this function"</p>
+            <p> print ("Values inside the function before change: ", mylist)</p>
+            <p>mylist[2]=50 </p>
+            <p>print ("Values inside the function after change: ", mylist)</p>
+            <p> return</p>
+            <p>mylist = [10,20,30]</p>
+            <p>changeme( mylist )</p>
+            <p>print ("Values outside the function: ", mylist)</p>
+            <hr>
+            <p>OUTPUT:</p>
+            <p>Values inside the function before change: [10, 20, 30]</p>
+            <p>Values inside the function after change: [10, 20, 50]</p>
+            <p>Values outside the function: [10, 20, 50]</p>
+            <p></p>
+        </div>
+    </div>
+    <div id='third'>
+        <h2>Function Arguments </h2>
+        <hr>
+        <p>You can call a function by using the following types of formal arguments-</p>
+        <ul>
+            <li>Required arguments</li>
+            <li>Keyword arguments</li>
+            <li>Default arguments</li>
+            <li>Variable-length arguments</li>
+        </ul>
+        <p> </p>
+        <h3>Required Arguments</h3>
+        <hr>
+        <p>Required arguments are the arguments passed to a function in correct positional order. Here, the number of arguments in the function call should match exactly with the function definition.</p>
+        <p>To call the function printme(), you definitely need to pass one argument, otherwise it gives a syntax error </p>
+        <p> </p>
+        <h3>Keyword Arguments</h3>
+        <hr>
+        <p>Keyword arguments are related to the function calls. When you use keyword arguments in a function call, the caller identifies the arguments by the parameter name.</p>
+        <p>This allows you to skip arguments or place them out of order because the Python interpreter is able to use the keywords provided to match the values with parameters. You can also make keyword calls to the printme() function</p>
+        <p> </p>
+        <h3>Default Arguments</h3>
+        <hr>
+        <p>A default argument is an argument that assumes a default value if a value is not provided in the function call for that argument.</p>
+        <p> </p>
+        <h3>Variable-length Arguments</h3>
+        <hr>
+        <p>You may need to process a function for more arguments than you specified while defining the function. These arguments are called variable-length arguments and are not named in the function definition, unlike required and default arguments.</p>
+        <p></p>
+        <p> </p>
+    </div>
+    <div id='fourth'>
+        <h2>The Anonymous Functions </h2>
+        <hr>
+        <p>These functions are called anonymous because they are not declared in the standard manner by using thedefkeyword. You can use thelambdakeyword to create small anonymous functions.</p>
+        
+        <ul>
+            <li>Lambda forms can take any number of arguments but return just one value in the form of an expression. They cannot contain commands or multiple expressions.</li>
+            <li>An anonymous function cannot be a direct call to print because lambda requires an expression.</li>
+            <li>Lambda functions have their own local namespace and cannot access variables other than those in their parameter list and those in the global namespace.</li>
+            <li>Although it appears that lambdas are a one-line version of a function, they are not equivalent to inline statements in C or C++, whose purpose is to stack allocation by passing function, during invocation for performance reasons.</li>
+        </ul>
+        <p>Syntax:</p>
+        <div class="w2">
+            <p>lambda [arg1 [,arg2,.....argn]]:expression</p>
+            <hr>
+            <p>example:</p>
+            <p>sum = lambda arg1, arg2: arg1 + arg2</p>
+            <p>print ("Value of total : ", sum( 10, 20 ))</p>
+            <p>print ("Value of total : ", sum( 20, 20 ))</p>
+            <p> OUTPUT:</p>
+            <p>Value of total :  30</p>
+            <p>Value of total :  40</p>
+        </div>
+    </div>
+   
+  </div>
+</body>    
+</html>

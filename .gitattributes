@@ -1,0 +1,2 @@
+Projects/school-data-analysis/Donors.csv filter=lfs diff=lfs merge=lfs -text
+Projects/school-data-analysis/Donations.csv filter=lfs diff=lfs merge=lfs -text

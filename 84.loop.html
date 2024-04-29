@@ -1,0 +1,212 @@
+<head><title>CONSTANTS</title>
+   <style type="text/css">
+   #hhh{
+        background-color:peachpuff;
+		height:3250px;
+		width:1150px;
+		margin:20px;
+		padding:30px;
+		border-radius:20px;
+		font-family:open-sans;
+	
+		
+		
+		}
+   #hh{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:skyblue;
+	  margin:30px;
+	  font-size:20px;
+	  height:3100px;
+	font-family: Arial, Helvetica, sans-serif;
+	  }
+	  #hhhh{
+      width:3400px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#0BAF78;
+	  margin:30px;
+	  font-size:20px;
+	  height:3200px;
+	  }
+	  #hhhhh{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#AFA30B;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	  #j{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#AF5F0B;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	   #jj{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#76AF0B;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	  #jjj{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#0BAF73;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	   #jjjj{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#0BAFA0;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	  #jjjjj{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#0B78AF;
+	  margin:30px;
+	  font-size:20px;
+	  height:320px;
+	  }
+	    #jjjjjj{
+      width:1000px;
+	  padding:40px;
+	  border-radius:20px;
+	  background-color:#0BAF78;
+	  margin:30px;
+	  font-size:20px;
+	  height:200px;
+	  
+	  }
+	  #text{
+	  padding:20px;
+          
+	  background-color:black;
+	   color:white;
+	}
+	 #ext{
+	    padding:20px;
+	    background-color:white;
+	    color:black;
+	}
+	  
+	  
+	  </style>
+	  <body>
+	  <div id="hhh">
+	  <div id="hh">
+	  
+<h1 style="color:red;margin-left:250px;margin-top:-20px;">Loops</h1>
+<p>You go through your shopping list until you've collected every item from it. The dealer gives a card for each player until everyone has five.<br>The athlete does push-ups until reaching one-hundred... Loops everywhere! As for for loops in Python: they are perfect for processing repetitive programming tasks.
+<br><br>
+
+
+In Python, and all other modern programming languages, iteration statements (also called loops) allow a set of instructions to be repeatedly executed until a certain condition is reached. This condition may be predetermined (as in the for loop) or open-ended (as in the while and do-while loops).
+
+In another way we can say, A loop can be used to tell a program to execute statements repeatedly. Or we can say that a loop repeatedly executes the same set of instructions until a termination condition is met.</p>
+<img src="https://data36.com/wp-content/uploads/2018/01/python-for-logic-3-768x469.png"height="400" width="600" margin-left:500;>
+<h3 style="color:red;">For Loop</h3>
+<p>Python implements an iterator-based 'for loop'. It is a type of 'for loop' that iterates over a
+list of items through an explicit or implicit iterator.</p>
+<p>The loop is introduced by the keyword 'for' which is followed by a random variable name</p>
+<p>which will contain the values supplied by the object.</p>
+<p>This is the syntax of Python's 'for loop':</p>
+<p ID="text"  >for variable in list:
+<br>statements
+<br>else:
+<br>statements</p>
+
+<p>Here is an example of a 'for loop' in Python:</p>
+
+<p ID="text">pizza = ["New York Style Pizza", "Pan Pizza", "Thin n Crispy Pizza", "Stuffed Crust" ,"Pizza"]<br>
+
+<br>for choice in pizza:
+
+<br>if choice == "Pan Pizza":
+<br>print("Please pay $16. Thank you!")
+<br>print("Delicious, cheesy " + choice)
+<br>else:
+<br>print("Cheesy pan pizza is my all-time favorite!")
+<br>print("Finally, I'm full!")
+</p>
+<p>Run this and you'll get the following output on Python Shell:</p>
+<p ID="ext">Delicious, cheesy New York Style Pizza<br>
+Please pay $16. Thank you!<br>
+Delicious, cheesy Pan Pizza<br>
+Delicious, cheesy Thin n Crispy Pizza<br>
+Delicious, cheesy Stuffed Crust Pizza<br>
+Cheesy pan pizza is my all-time favorite!<br>
+Finally, I'm full!
+</p>
+
+<h3>Using the range() Function with the for Loop
+</h3>
+<p>The range() function can be combined with the 'for loop' to supply the numbers required
+by the loop. In the following example, the range(1, x+1) provided the numbers 1 to 50
+needed by the 'for loop' to add the sum of 1 until 50:</p>
+<p ID="text">x = 50<br>
+total = 0<br>
+for number in range(1, x+1):<br>
+total = total + number<br>
+print('Sum of 1 until %d: %d' % (x, total))</p>
+<p>The Python Shell will display:</p>
+<p ID="ext">l.py<br>
+Sum of 1 until 50: 1275</p>
+
+
+<h3>The While Loop</h3>
+<p>A Python 'while loop' repeatedly carries out a target statement while the condition is true.
+The loop iterates as long as the defined condition is true. When it ceases to be true and
+becomes false, control passes to the first line after the loop.</p>
+
+</p>The 'while loop' has the following syntax:</p>
+<p ID="text">while condition
+<br>statement
+<br>statement</p>
+<p>Here is a simple 'while loop':<br>
+<p ID="text">counter = 0
+<br>while (counter < 10):
+<br>print('The count is:' , counter)
+<br>counter = counter + 1
+<br>print('Done!')</p>
+<p>If you run the code, you should see this output:</p>
+<p ID="ext">l.py<br>
+<br>The count is: 0
+<br>The count is: 1
+<br>The count is: 2
+<br>The count is: 3
+<br>The count is: 4
+<br>The count is: 5
+<br>The count is: 6
+<br>The count is: 7
+<br>The count is: 8
+<br>The count is: 9
+<br>Done!
+</p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
